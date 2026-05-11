@@ -36,4 +36,6 @@ jobs:
           IMGBB_KEY: ${{ secrets.IMGBB_KEY }}
           NOTIFYME_UUID: ${{ secrets.NOTIFYME_UUID }}
           BARK_KEY: ${{ secrets.BARK_KEY }}
+          WXPUSHER_APP_TOKEN: ${{ secrets.WXPUSHER_APP_TOKEN }}
+          WXPUSHER_TOPIC_ID: ${{ secrets.WXPUSHER_TOPIC_ID }}
         run: python main.py
