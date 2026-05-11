@@ -1,6 +1,7 @@
 import os
 import requests
 import asyncio
+import time
 from datetime import datetime, timedelta, timezone
 from jinja2 import Environment, FileSystemLoader
 from playwright.async_api import async_playwright
@@ -249,4 +250,7 @@ async def main():
     push_all("📢 远行商人已刷新", push_body, "### 🛒 商人刷新详情", img_url)
 
 if __name__ == "__main__":
+    print("🚀 开始执行,20s后开始获取数据")
+    time.sleep(20)
+    print("================================================================================")
     asyncio.run(main())
